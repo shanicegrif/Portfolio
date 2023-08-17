@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $recipient = "shanicegriffin@pursuit.org"; // Replace with your email address
+    $recipient = "your@email.com"; // Replace with your email address
     $subject = $_POST["subject"];
     $name = $_POST["name"];
     $email = $_POST["email"];
@@ -11,8 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     mail($recipient, $subject, $message, $headers);
 
-    // Redirect user back to the contact section after submission
-    header("Location: index.html#contact");
-    exit;
+    // Display a confirmation message on your contact section
+    echo '<p class="confirmation-message">Thank you for your message! We will get back to you shortly.</p>';
 }
 ?>
