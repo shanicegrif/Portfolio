@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $recipient = "your@email.com"; // Replace with your email address
+    $recipient = "shanicegriffin@pursuit.org"; // Replace with your email address
     $subject = $_POST["subject"];
     $name = $_POST["name"];
     $email = $_POST["email"];
